@@ -1,0 +1,154 @@
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/lesson1 (main)
+git status
+On branch main
+nothing to commit, working tree clean
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/lesson1 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/lesson1 (main)
+$ git log
+commit 2215a4f2e1f5ffdbd5a97ae3d221d6df597f7123 (HEAD -> main)
+Author: firuzhakan <firuzhakan@gmail.com>
+Date:   Thu Mar 25 23:48:14 2021 +0300
+
+    hkdhasdhakshd
+
+commit 41dcd6799faa82636afbadc68be006424f3d6535
+Author: firuzhakan <firuzhakan@gmail.com>
+Date:   Thu Mar 25 23:32:09 2021 +0300
+
+    yeni bir satır ekledim
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/lesson1 (main)
+$ git clone https://github.com/githakan44/python-project.git^C
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/lesson1 (main)
+$ cd ..
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson
+$ git clone https://github.com/githakan44/python-project.git
+Cloning into 'python-project'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson
+$ ls
+lesson1/  python-project/
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson
+$ cd python-project
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ git branch
+* main
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ cat $ps1
+
+
+
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ ls
+README.md
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ ls -a
+./  ../  .git/  README.md
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ git remote -v
+origin  https://github.com/githakan44/python-project.git (fetch)
+origin  https://github.com/githakan44/python-project.git (push)
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ touch helloworld.py
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ ls
+README.md  helloworld.py
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ git add .
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   helloworld.py
+
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ git commit -m "created helloworld"
+[main 2131c55] created helloworld
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 helloworld.py
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ git log
+commit 2131c5549d370197e4eb660416fb141fb557bd1a (HEAD -> main)
+Author: firuzhakan <firuzhakan@gmail.com>
+Date:   Mon Mar 29 22:23:19 2021 +0300
+
+    created helloworld
+
+commit bf32ea7370a9c66b8587063a4fe2235992792ef2 (origin/main, origin/HEAD)
+Author: githakan44 <81556976+githakan44@users.noreply.github.com>
+Date:   Mon Mar 29 21:44:40 2021 +0300
+
+    Initial commit
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ ls
+README.md  helloworld.py
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ vim helloworld.py
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   helloworld.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ git commit -am "updated hello world.py"
+warning: LF will be replaced by CRLF in helloworld.py.
+The file will have its original line endings in your working directory
+[main c211d2c] updated hello world.py
+ 1 file changed, 1 insertion(+)
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ git lo --oneline
+git: 'lo' is not a git command. See 'git --help'.
+
+The most similar commands are
+        log
+        flow
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+HAKAN@DESKTOP-M691NRS MINGW64 ~/desktop/gitlesson/python-project (main)
